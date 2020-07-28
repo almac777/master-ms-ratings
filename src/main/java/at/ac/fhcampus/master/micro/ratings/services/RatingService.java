@@ -12,4 +12,8 @@ public interface RatingService {
     RatingDto rate(RatingDto ratingDto);
 
     List<RatingDto> list();
+
+    RatingDto update(RatingDto ratingDto, Long id);
+
+    void delete(Long id);
 }

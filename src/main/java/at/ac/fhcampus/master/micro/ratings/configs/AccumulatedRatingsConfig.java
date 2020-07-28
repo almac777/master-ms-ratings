@@ -6,10 +6,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AccumulatedRatingsConfig {
-
     @Bean
     public Queue accumulatedRatingsWorkerQueue() {
         return new Queue("accumulated-ratings");
     }
-
 }
